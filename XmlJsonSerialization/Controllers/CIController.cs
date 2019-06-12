@@ -8,6 +8,7 @@ using XmlJsonSerialization.Models;
 
 namespace XmlJsonSerialization.Controllers
 {
+    //[Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class CIController : Controller

@@ -29,6 +29,8 @@ namespace XmlJsonSerialization
             services.AddControllers()
                 .AddNewtonsoftJson();
 
+            services.AddMvc()
+                .AddXmlSerializerFormatters();
 
             services.AddScoped<ICinematicItemRepository, CinematicItemRepository>();
         }
