@@ -10,6 +10,7 @@ namespace XmlJsonSerialization.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public string Rating { get; set; }
-        public string ShortName { get; set; }   
+        public string ShortName { get; set; }
+        public string Sequel { get; set; }
     }
 }

@@ -52,6 +52,13 @@ namespace XmlJsonSerialization.Controllers
             return _cinematicItemRepository.GetByShortName(shortName);
         }
 
+        // GET: api/ci/related?sequel=IM2
+        [HttpGet("Related")]
+        public CinematicItem Related(string sequel)
+        {
+            return _cinematicItemRepository.GetBySequel(sequel);
+        }
+
         // GET api/ci/about
         [HttpGet("About")]
         public ContentResult About()
