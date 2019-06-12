@@ -8,7 +8,13 @@ using XmlJsonSerialization.Models;
 
 namespace XmlJsonSerialization.Controllers
 {
-    //[Produces("application/json")]
+    // NOTE: order of precedence
+    // 1. public JsonResult Get()
+    // 2. [Produces("application/json")]
+    // 3. Accept: application/json
+
+    // [Produces("application/xml")]
+    // [Produces("application/json")] 
     [Route("api/[controller]")]
     [ApiController]
     public class CIController : Controller
